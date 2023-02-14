@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.32/dist/sweetalert2.min.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+</head>
+<body>
+    <header>
+        <h1>Bookshelf App</h1>
+        <!-- <span class="material-symbols-outlined">Edit</span> -->
+    </header>
+
+    <div class="wrapper">
+        <div class="container">
+            <h2 class="text-center">Masukkan Buku Baru</h2>
+            <form action="#" class="form" id="form">
+                <div class="form-group">
+                    <label for="title">Judul</label>
+                    <input type="text" name="title" id="title" placeholder="Masukkan judul buku" required>
+                </div>
+                <div class="form-group">
+                    <label for="writer">Penulis</label>
+                    <input type="text" name="writer" id="writer" placeholder="Masukkan penulis buku" required>
+                </div>
+                <div class="form-group">
+                    <label for="year">Tahun</label>
+                    <input type="number" name="year" id="year" placeholder="Masukkan tahun buku" required>
+                </div>
+                <div class="form-group">
+                    <p>Selesai dibaca <input type="checkbox" name="has-been-readed" id="has-been-readed"></p>
+                    <input type="submit" class="submit" id="submit" value="Masukkan buku ke rak 'Belum selesai dibaca'">
+                </div>
+            </form>
+        </div>
+
+        <div class="container">
+            <h2 class="text-center">Cari buku</h2>
+            <div class="inline">
+                <p>Judul</p>
+                <input type="text" class="input-book-title" id="input-book-title">
+                <button class="search-book" id="search-book">Cari</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 class="text-center">Belum selesai dibaca</h2>
+            <div id="uncompleted-book">
+                
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 class="text-center">Selesai dibaca</h2>
+            <div id="completed-book">
+                
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Front-End Web for Beginner Project &copy; 2022, Brendan Cicero Pasaribu</p>
+    </footer>
+    
+    <script src="assets/scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.32/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
