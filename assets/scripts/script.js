@@ -124,6 +124,10 @@ function addBooks() {
 
     document.dispatchEvent(new Event(RENDER_EVENT));
     saveBookToStorage();
+    document.getElementById('title').innerHTML = '';
+    document.getElementById('writer').innerHTML = '';
+    document.getElementById('year').innerHTML = '';
+    document.getElementById('has-been-readed').innerHTML = '';
 }
 
 function makeBook(bookObject) {
