@@ -127,7 +127,7 @@ function addBooks() {
     document.getElementById('title').innerHTML = '';
     document.getElementById('writer').innerHTML = '';
     document.getElementById('year').innerHTML = '';
-    document.getElementById('has-been-readed').innerHTML = '';
+    document.getElementById('has-been-readed').checked = false;
 }
 
 function makeBook(bookObject) {
