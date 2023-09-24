@@ -214,10 +214,6 @@ function loadBookFromStorage() {
 }
 
 document.addEventListener(RENDER_EVENT, function () {
-  document.getElementById("title").innerHTML = "";
-  document.getElementById("writer").innerHTML = "";
-  document.getElementById("year").innerHTML = "";
-
   const uncompletedBook = document.getElementById("uncompleted-book");
   uncompletedBook.innerHTML = "";
 
